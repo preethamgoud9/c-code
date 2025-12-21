@@ -60,7 +60,7 @@ int main() {
     return 0;
 }
 */
-
+/*
 #include <iostream>
 
 int main() {
@@ -75,4 +75,43 @@ int main() {
     }
 
     return 0;
+
+}
+*/
+/*
+#include <iostream> 
+int main() {
+    int n;
+    std::cout << "Enter the value of n" << std::endl;
+    std::cin >> n;
+    for (int i = 1;i<=n;i++) {
+        for (int j = 1;j<=n-i+1;j++) {
+            std::cout << j << " ";
+        }
+        std::cout << "" << std::endl;    
+    }
+}
+*/
+
+#include <iostream>
+
+int main() {
+    int n;
+    std::cout << "Enter the value of n" <<std::endl;
+    std::cin >>n;
+    for (int i = 0;i <n;i++) {
+        int stars = 2*i+1;
+        int spaces = n-i-1;
+        for (int j=0;j<spaces;j++) {
+            std::cout << " ";
+        }
+        for (int j=0;j<stars;j++) {
+            std::cout << "*";
+        }
+
+        for (int j=0;j<spaces;j++) {
+            std::cout << " ";
+        }
+        std::cout << std::endl;
+    }
 }
